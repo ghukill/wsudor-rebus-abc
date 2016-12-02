@@ -1,0 +1,61 @@
+author:
+  email: null
+  name: An Author
+  twitter: null
+  url: null
+baseurl: /wsudor-rebus-abc
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:path/
+  volume_pages:
+    output: true
+    permalink: /pages/:path/
+defaults:
+- scope:
+    path: ''
+    type: volume_pages
+  values:
+    extra_js:
+    - deepzoom.js
+    - openseadragon.min.js
+    - volume-page.js
+    - hammer.min.js
+    layout: volume_page
+    short_label: p.
+- scope:
+    path: ''
+    type: annotations
+  values:
+    layout: annotation
+description: An annotated digital edition created with <a href="http://readux.library.emory.edu/">Readux</a>
+homepage_image: http://digital.library.wayne.edu/readux/books/wayne:Rebus1898b2155089x_Readux_VirtualVolume/pages/wayne:Rebus1898b2155089x_Readux_VirtualPage_2/single-page/
+image_size:
+  page:
+    height: 1000
+    width: 769
+  small-thumbnail:
+    height: 100
+    width: 76
+  thumbnail:
+    height: 300
+    width: 230
+permalink: pretty
+publication_info:
+  author: null
+  date: '2016'
+  editors: []
+  tei_xml: tei.xml
+  title: 'Rebus: ABC, an annotated digital edition'
+show_annotation_author: true
+source_info:
+  author: null
+  date: '1898'
+  pdf_url: http://digital.library.wayne.edu/readux/books/wayne:Rebus1898b2155089x_Readux_VirtualVolume/pdf/
+  title: 'Rebus: ABC'
+  url: http://digital.library.wayne.edu/readux/books/wayne:Rebus1898b2155089x_Readux_VirtualVolume/
+  via_readux: true
+tagline: ', an annotated digital edition'
+title: 'Rebus: ABC'
+url: http://ghukill.github.io
+version: 0.6
